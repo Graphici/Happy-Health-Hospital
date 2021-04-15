@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <!--Required meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+        <title>Happy Health Hospital</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary" style="padding: 20px;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.html" style="font-weight: 800; color: white;">HAPPY HEALTH HOSPITAL</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 64px;">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="book-appointment.html" style="font-weight: 700; color: white;">Book Appointment</a>
+                  </li>
+                  <li class="nav-item" style="margin-left: 28px">
+                    <a class="nav-link" href="medical-test.html" style="color: lightblue;">Book Medical Test</a>
+                  </li>
+                  <li class="nav-item" style="margin-left: 28px;">
+                    <a class="nav-link" href="#" style="color: lightblue;">Admit in COVID ward</a>
+                  </li>
+                  <li class="nav-item" style="margin-left: 28px;">
+                    <a class="nav-link" href="#" style="color: lightblue;">Donate Plasma</a>
+                  </li>
+                  <li class="nav-item" style="margin-left: 28px;">
+                    <a class="nav-link" href="#" style="color: lightblue;">Vaccination</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div class="container" style="margin-top: 40px; max-width: 500px;">
+            <h2 style="font-weight: 700; text-align: center;">Book Appointment</h2>
+            <form style="margin-top: 42px; margin-bottom: 42px;">
+                <div class="mb-3">
+                    <label for="selectDoctor" class="form-label">Select Doctor</label>
+                    <select class="form-select" type="email" class="form-control" id="doctorName" required>
+                            <option value> Choose...</option>
+                            <option>Dr. Parag Shah</option>
+                            <option>Dr. Pratik Desai</option>
+                            <option>Dr. Ankur Mehta</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="appDate" class="form-label">Appointment Date</label>
+                    <input type="datetime" class="form-control" id="inputAppointmentDate" required>
+                </div>
+                <div class="mb-3">
+                  <label for="appTime" class="form-label">Appointment Time</label>
+                  <select class="form-select" type="email" class="form-control" id="inputAppointmentTime" required>
+                    <option value> Choose...</option>
+                    <option>9:00 AM</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>2:00 PM</option>
+                    <option>3:00 PM</option>
+                    <option>4:00 PM</option>
+                    <option>5:00 PM</option>
+            </select>
+              </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Patient Name</label>
+                    <input type="text" class="form-control" id="patientName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                </div>
+                <div class="d-grid gap-2 col-100 mx-auto" style="margin-top: 32px;">
+                    <button type="submit" class="btn btn-primary">Book Appointment</button>
+                </div>  
+          </form>
+        </div>
+    </body>
